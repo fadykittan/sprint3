@@ -26,6 +26,19 @@
 <script src="_js/home.js"></script>
 
 
+<!-- charts cdn -->
+
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+
+
+<script src="_js/calculate_charts.js"></script>
+
+
+
 </head>
 <body onload="init()">
 
@@ -128,6 +141,36 @@
 	</div>
 
 
+	<div class="container">
+
+		<h2>Charts</h2>
+		<br> <br>
+
+		<button class="btn btn-primary" onclick="showBarChart()">Show
+			Bar chart</button>
+		<button class="btn btn-primary" onclick="HideBarChart()">Hide
+			Bar chart</button>
+
+		<button class="btn btn-primary" onclick="showPieChart()">Show
+			Pie chart</button>
+		<button class="btn btn-primary" onclick="HidePieChart()">Hide
+			Pie chart</button>
+
+
+
+		<div class="row">
+			<div id="chart1" class="col-md-6">
+				<canvas id="barChart" width="50" height="50"></canvas>
+			</div>
+
+
+			<div id="chart2" class="col-md-6">
+				<canvas id="pieChart" width="50" height="50"></canvas>
+			</div>
+
+		</div>
+
+	</div>
 
 
 
